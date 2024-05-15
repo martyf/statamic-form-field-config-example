@@ -1,0 +1,86 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: contact_name
+            field:
+              input_type: text
+              character_limit: 150
+              antlers: false
+              display: Name
+              type: text
+              listable: true
+              instructions_position: above
+              visibility: visible
+              always_save: false
+              width: 66
+              hide_display: false
+              instructions: 'With instructions'
+              replicator_preview: true
+              validate:
+                - required
+          -
+            handle: contact_email
+            field:
+              input_type: text
+              character_limit: 150
+              antlers: false
+              display: 'Email Address'
+              type: text
+              listable: true
+              instructions_position: below
+              visibility: visible
+              always_save: false
+              width: 75
+              hide_display: false
+              instructions: 'Instructions after'
+              validate:
+                - required
+                - email
+              replicator_preview: true
+          -
+            handle: contact_number
+            field:
+              input_type: tel
+              character_limit: 20
+              antlers: false
+              display: 'Contact Number'
+              type: text
+              listable: true
+              instructions_position: above
+              visibility: visible
+              always_save: false
+              width: 33
+          -
+            handle: contact_message
+            field:
+              antlers: false
+              display: Message
+              type: textarea
+              listable: true
+              instructions_position: above
+              visibility: visible
+              always_save: false
+              hide_display: false
+              validate:
+                - required
+              replicator_preview: true
+          -
+            handle: assets_field
+            field:
+              mode: list
+              container: assets
+              restrict: false
+              allow_uploads: true
+              show_filename: true
+              show_set_alt: true
+              type: assets
+              display: 'Assets Field'
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
